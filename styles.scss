@@ -1,0 +1,59 @@
+$primary-text-color: #33323d;
+$font-family-sans: "Public Sans", sans-serif;
+$font-family-serif: "Ibarra Real Nova", serif;
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	font-family: $font-family-sans;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.header {
+	display: flex;
+	padding: 2.75rem 0;
+	justify-content: center;
+
+	&__nav {
+		width: 75%;
+	}
+}
+
+.nav {
+	display: flex;
+	justify-content: space-around;
+	&__link {
+		color: $primary-text-color;
+		text-transform: uppercase;
+		font-size: 14px;
+		font-weight: 600;
+	}
+}
+
+.main-title-wrapper {
+	padding: 0 2rem;
+}
+
+.main-title {
+	font-family: $font-family-serif;
+}
