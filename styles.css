@@ -67,12 +67,21 @@ img {
   margin: 0 auto;
 }
 
-.main-title {
+.title {
+  font-family: "Ibarra Real Nova", serif;
+  font-weight: 700;
+}
+
+.title--main {
   margin-top: 20px;
   margin-bottom: 30px;
-  font-family: "Ibarra Real Nova", serif;
   font-size: 40px;
   line-height: 1;
+  letter-spacing: 1px;
+}
+
+.title--sub {
+  font-size: 36px;
 }
 
 .landing-section {
@@ -83,14 +92,19 @@ img {
   background-color: #203a4c;
   color: white;
   text-transform: uppercase;
-  font-size: 13px;
+  font-size: 12px;
   padding: 1rem;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
+  font-weight: 600;
 }
 
 .img-container {
   width: 80%;
-  margin: 0 auto;
+  margin: 0 auto 30px;
+}
+
+.about {
+  border-top: 1px solid #dcdcde;
 }
 
 .about__body {

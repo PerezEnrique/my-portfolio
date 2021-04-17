@@ -1,6 +1,7 @@
 $primary-text-color: #33323d;
 $accent-color: #203a4c;
 $on-hover-color: #5fb4a2;
+$border-color: #dcdcde;
 $font-family-sans: "Public Sans", sans-serif;
 $font-family-serif: "Ibarra Real Nova", serif;
 
@@ -68,12 +69,20 @@ img {
 // 	padding: 0 2rem;
 // }
 
-.main-title {
-	margin-top: 20px;
-	margin-bottom: 30px;
+.title {
 	font-family: $font-family-serif;
-	font-size: 40px;
-	line-height: 1;
+	font-weight: 700;
+	&--main {
+		margin-top: 20px;
+		margin-bottom: 30px;
+		font-size: 40px;
+		line-height: 1;
+		letter-spacing: 1px;
+	}
+
+	&--sub {
+		font-size: 36px;
+	}
 }
 
 .landing-section {
@@ -84,14 +93,19 @@ img {
 	background-color: $accent-color;
 	color: white;
 	text-transform: uppercase;
-	font-size: 13px;
+	font-size: 12px;
 	padding: 1rem;
-	letter-spacing: 1px;
+	letter-spacing: 2px;
+	font-weight: 600;
 }
 
 .img-container {
 	width: 80%;
-	margin: 0 auto;
+	margin: 0 auto 30px;
+}
+
+.about {
+	border-top: 1px solid $border-color;
 }
 
 .about__body {
