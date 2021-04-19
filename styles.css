@@ -20,6 +20,7 @@ li {
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 img {
@@ -62,9 +63,33 @@ img {
   margin: 0 auto;
 }
 
-.main {
+.landing-section,
+.about-section,
+.projects-section,
+.get-in-touch {
+  width: 80%;
+  margin: 0 auto 50px;
+}
+
+.contact-info {
+  padding: 0.25rem 0;
+  background-color: #33323d;
+}
+
+.contact-info > div {
   width: 80%;
   margin: 0 auto;
+  color: white;
+}
+
+.about,
+.project {
+  border-top: 1px solid #dcdcde;
+}
+
+.img-container {
+  width: 80%;
+  margin: 30px auto;
 }
 
 .title {
@@ -80,6 +105,10 @@ img {
   letter-spacing: 1px;
 }
 
+.title--light {
+  color: white;
+}
+
 .title--sub {
   font-size: 36px;
 }
@@ -88,9 +117,10 @@ img {
   font-size: 32px;
 }
 
-.landing-section,
-.about-section {
-  margin-bottom: 50px;
+.paragraph {
+  line-height: 1.75;
+  opacity: 0.8;
+  margin-bottom: 30px;
 }
 
 .btn {
@@ -119,19 +149,10 @@ img {
   cursor: pointer;
 }
 
-.img-container {
-  width: 80%;
-  margin: 30px auto;
-}
-
-.about,
-.project {
-  border-top: 1px solid #dcdcde;
-}
-
-.paragraph {
-  line-height: 1.75;
-  opacity: 0.8;
-  margin-bottom: 30px;
+.icon {
+  display: inline-block;
+  margin: 15px 15px 15px 0;
+  font-size: 32px;
+  color: inherit;
 }
 /*# sourceMappingURL=styles.css.map */
