@@ -27,42 +27,46 @@
 					</ul>
 				</nav>
 			</header>
-			<div class="hero">
-				<img src="./images/hero.jpg" alt="laptop with lines of code on its screen" />
-			</div>
 			<main class="main" role="main">
 				<section class="landing-section" id="landing">
-					<div class="main-title-wrapper">
-						<h1 class="title title--main">
-							Hello, I'm Jesus Enrique, and I'm software developer
-						</h1>
+					<div class="hero">
+						<img src="./images/hero.jpg" alt="laptop with lines of code on its screen" />
+						<div class="main-title-wrapper">
+							<h1 class="title title--main">
+								Hi, I'm Jesus Enrique and I'm software developer
+							</h1>
+							<a class="btn btn--dark" href="#about">About me</a>
+						</div>
 					</div>
-					<a class="btn btn--dark" href="#about">About me</a>
 				</section>
 				<section class="about-section" id="about">
-					<div class="img-container">
-						<img src="./images/je.png" alt="A picture of Jesus Enrique" />
-					</div>
 					<div class="about">
-						<h2 class="title title--sub">About Me</h2>
-						<p class="paragraph">
-							I’m a junior front-end developer looking for a new role in an exciting
-							company. I focus on writing accessible HTML, using modern CSS practices and
-							writing clean JavaScript. When writing JavaScript code, I mostly use React,
-							but I can adapt to whatever tools are required. I’m based in London, UK, but
-							I’m happy working remotely and have experience in remote teams. When I’m not
-							coding, you’ll find me outdoors. I love being out in nature whether that’s
-							going for a walk, run or cycling. I’d love you to check out my work.
-						</p>
+						<div class="about__media">
+							<img src="./images/je.png" alt="A picture of Jesus Enrique" />
+						</div>
+						<div class="about__body">
+							<h2 class="title title--sub">About Me</h2>
+							<p class="paragraph">
+								I’m a junior front-end developer looking for a new role in an exciting
+								company. I focus on writing accessible HTML, using modern CSS practices
+								and writing clean JavaScript. When writing JavaScript code, I mostly use
+								React, but I can adapt to whatever tools are required. I’m based in
+								London, UK, but I’m happy working remotely and have experience in remote
+								teams. When I’m not coding, you’ll find me outdoors. I love being out in
+								nature whether that’s going for a walk, run or cycling. I’d love you to
+								check out my work.
+							</p>
+							<a class="btn btn--dark" href="#projects">My projects</a>
+						</div>
 					</div>
 				</section>
-				<section class="projects-section">
-					<h2 class="title title--sub">My Projects</h2>
+				<section class="projects-section" id="projects">
+					<h2 class="title title--sub">Some of My Projects</h2>
 					<div class="project">
-						<div class="img-container">
+						<div class="project__media img-container">
 							<img src="./images/tv_app.png" alt="Screenshot of one tv-watchlist app" />
 						</div>
-						<div class="project__description">
+						<div class="project__body">
 							<h3 class="title title--project">TV Watchlist app</h3>
 							<p class="paragraph">
 								This project required me to build a fully responsive landing page to the
@@ -74,16 +78,16 @@
 								href="https://github.com/PerezEnrique/tv-watchlist"
 								>View code</a
 							>
-							<a class="btn btn--light" href="https://tv-watchlist-app.herokuapp.com/"
+							<a class="btn btn--dark" href="https://tv-watchlist-app.herokuapp.com/"
 								>Visit app</a
 							>
 						</div>
 					</div>
 					<div class="project">
-						<div class="img-container">
+						<div class="project__media img-container">
 							<img src="./images/e_shop.png" alt="Screenshot of one tv-watchlist app" />
 						</div>
-						<div class="project__description">
+						<div class="project__body">
 							<h3 class="title title--project">E-Shop site (e-commerce app)</h3>
 							<p class="paragraph">
 								This project required me to build a fully responsive landing page to the
@@ -93,15 +97,17 @@
 							<a class="btn btn--light" href="https://github.com/PerezEnrique/e-shop"
 								>View code</a
 							>
-							<a class="btn btn--light" href="https://eshopsite.herokuapp.com/"
+							<a class="btn btn--dark" href="https://eshopsite.herokuapp.com/"
 								>Visit app</a
 							>
 						</div>
 					</div>
 				</section>
-				<section class="contact-section">
+				<section class="contact-section" id="contact">
 					<div class="get-in-touch">
-						<h2 class="title title--sub">Git in Touch</h2>
+						<h2 class="title title--sub">
+							Interested in doing a project together? Get in Touch
+						</h2>
 						<p class="paragraph">
 							I’d love to hear about what you’re working on and how I could help. I’m
 							currently looking for a new role and am open to a wide range of
@@ -113,20 +119,18 @@
 						</p>
 					</div>
 					<div class="contact-info">
-						<div>
-							<h2 class="title title--sub title--light">Contact Me</h2>
-							<span>
-								Email:
-								<a href="mailto:28enriqueperez@gmail.com">28enriqueperez@gmail.com</a>
-							</span>
-							<br />
-							<a class="icon" href="https://github.com/perezEnrique"
-								><i class="fab fa-github"></i
-							></a>
-							<a class="icon" href="https://twitter.com/MangoH3nry"
-								><i class="fab fa-twitter"></i
-							></a>
-						</div>
+						<h2 class="title title--sub title--light">Contact Me</h2>
+						<span>
+							Email:
+							<a href="mailto:28enriqueperez@gmail.com">28enriqueperez@gmail.com</a>
+						</span>
+						<br />
+						<a class="icon" href="https://github.com/perezEnrique"
+							><i class="fab fa-github"></i
+						></a>
+						<a class="icon" href="https://twitter.com/MangoH3nry"
+							><i class="fab fa-twitter"></i
+						></a>
 					</div>
 				</section>
 			</main>

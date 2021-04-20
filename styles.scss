@@ -34,9 +34,11 @@ img {
 	height: auto;
 }
 
+// HEADER
 .header {
 	display: flex;
 	padding: 2.5rem 0;
+	margin-bottom: 30px;
 	justify-content: center;
 
 	&__nav {
@@ -56,37 +58,49 @@ img {
 	}
 }
 
-.hero {
-	width: 80%;
-	margin: 0 auto;
-}
-
+// BODY
 .landing-section,
 .about-section,
-.projects-section,
-.get-in-touch {
+.projects-section {
 	width: 80%;
-	margin: 0 auto 50px;
+	margin: 0 auto 75px;
+	max-width: 1000px;
 }
 
-.contact-info {
-	padding: 0.25rem 0;
-	background-color: $primary-text-color;
-	& > div {
-		width: 80%;
-		margin: 0 auto;
-		color: white;
-	}
+.contact-section {
+	width: 80%;
+	max-width: 700px;
+	margin: 0 auto 30px;
 }
 
-.about,
-.project {
+// --->ABOUT AND PROJECTS
+
+.about__body {
+	margin-top: 30px;
 	border-top: 1px solid $border-color;
 }
 
-.img-container {
-	width: 80%;
-	margin: 30px auto;
+.project {
+	max-width: 575px;
+	padding: 1rem 0;
+	border-bottom: 1px solid $border-color;
+	margin: 0 auto;
+}
+
+.project:nth-of-type(2) {
+	padding-top: 6rem;
+}
+
+//CONTACT
+
+.get-in-touch > .paragraph {
+	margin-bottom: 0;
+}
+
+.contact-info {
+	padding: 1px 1rem 0.25rem;
+	background-color: $primary-text-color;
+	color: white;
 }
 
 // COMPONENTS
@@ -125,7 +139,7 @@ img {
 	display: inline-block;
 	text-transform: uppercase;
 	font-size: 12px;
-	padding: 1rem;
+	padding: 1rem 2rem;
 	letter-spacing: 2px;
 	font-weight: 600;
 	margin-right: 10px;
@@ -149,4 +163,73 @@ img {
 	margin: 15px 15px 15px 0;
 	font-size: 32px;
 	color: inherit;
+}
+
+// MEDIA QUERIES
+@media (min-width: 575px) {
+	.header {
+		margin: 0;
+	}
+
+	.hero {
+		position: relative;
+		width: 1000px;
+		margin: 0 auto;
+	}
+
+	.main-title-wrapper {
+		position: absolute;
+		bottom: 4px;
+		left: 0;
+		max-width: 350px;
+		padding: 1rem 0;
+		background-color: white;
+	}
+
+	.contact-section {
+		text-align: center;
+	}
+}
+
+@media (min-width: 768px) {
+	.landing-section,
+	.about-section,
+	.projects-section {
+		margin: 0 auto 150px;
+	}
+
+	.about {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		&__media {
+			width: 40%;
+		}
+		&__body {
+			width: 50%;
+		}
+	}
+
+	// .contact-info > div {
+	// 	width: 300px;
+	// 	margin: 0 auto;
+	// 	text-align: center;
+	// }
+}
+
+@media (min-width: 1150px) {
+	.project {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		max-width: initial;
+		&__media {
+			width: 40%;
+		}
+		&__body {
+			width: 50%;
+			border-top: 1px solid $border-color;
+		}
+	}
 }
