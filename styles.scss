@@ -1,6 +1,6 @@
 $primary-text-color: #33323d;
 $accent-color: #203a4c;
-$on-hover-color: #5fb4a2;
+$on-hover-link-color: #5fb4a2;
 $border-color: #dcdcde;
 $font-family-sans: "Public Sans", sans-serif;
 $font-family-serif: "Ibarra Real Nova", serif;
@@ -55,6 +55,10 @@ img {
 		font-size: 14px;
 		font-weight: 600;
 		letter-spacing: 1px;
+		transition: color 0.2s linear;
+		&:hover {
+			color: $on-hover-link-color;
+		}
 	}
 }
 
@@ -144,14 +148,25 @@ img {
 	font-weight: 600;
 	margin-right: 10px;
 	margin-bottom: 30px;
+	position: relative;
+	overflow: hidden;
 	&--dark {
 		background-color: $accent-color;
 		color: white;
+		&:before {
+			background: white;
+		}
 	}
 	&--light {
 		padding: 1rem 1.75rem;
 		color: $primary-text-color;
 		border: 1px solid $primary-text-color;
+		&:before {
+			background: $accent-color;
+		}
+		&:hover {
+			border-bottom: 0;
+		}
 	}
 	&:hover {
 		cursor: pointer;
@@ -210,12 +225,6 @@ img {
 			width: 50%;
 		}
 	}
-
-	// .contact-info > div {
-	// 	width: 300px;
-	// 	margin: 0 auto;
-	// 	text-align: center;
-	// }
 }
 
 @media (min-width: 1150px) {
@@ -232,4 +241,38 @@ img {
 			border-top: 1px solid $border-color;
 		}
 	}
+}
+
+// THIRD PARTY CSS
+/* UNDERLINE FROM CENTER EFFECT (SHOUT-OUT TO IAN LUNN'S HOVER.CSS https://github.com/IanLunn/Hover) */
+.btn {
+	display: inline-block;
+	vertical-align: middle;
+	-webkit-transform: perspective(1px) translateZ(0);
+	transform: perspective(1px) translateZ(0);
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+	position: relative;
+	overflow: hidden;
+}
+.btn:before {
+	content: "";
+	position: absolute;
+	z-index: -1;
+	left: 51%;
+	right: 51%;
+	bottom: 0;
+	// background: #2098d1;
+	height: 4px;
+	-webkit-transition-property: left, right;
+	transition-property: left, right;
+	-webkit-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+	-webkit-transition-timing-function: ease-out;
+	transition-timing-function: ease-out;
+}
+.btn:hover:before,
+.btn:focus:before,
+.btn:active:before {
+	left: 0;
+	right: 0;
 }
