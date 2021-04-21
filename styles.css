@@ -187,6 +187,10 @@ img {
   color: inherit;
 }
 
+.icon:hover {
+  color: #5fb4a2;
+}
+
 @media (min-width: 575px) {
   .header {
     margin: 0;

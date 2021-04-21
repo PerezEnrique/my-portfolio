@@ -182,6 +182,9 @@ img {
 	margin: 15px 15px 15px 0;
 	font-size: 32px;
 	color: inherit;
+	&:hover {
+		color: $on-hover-link-color;
+	}
 }
 
 // MEDIA QUERIES
