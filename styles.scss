@@ -9,6 +9,10 @@ $font-family-serif: "Ibarra Real Nova", serif;
 	box-sizing: border-box;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	margin: 0;
 	font-family: $font-family-sans;
