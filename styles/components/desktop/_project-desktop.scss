@@ -1,0 +1,16 @@
+@use "../../global";
+
+.project {
+	max-width: initial;
+	display: flex;
+	justify-content: space-around;
+	&__media {
+		width: 50%;
+		margin-top: 100px;
+		order: 2;
+	}
+	&__body {
+		width: 40%;
+		order: 1;
+	}
+}

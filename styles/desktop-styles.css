@@ -1,0 +1,71 @@
+.landing-section {
+  max-width: initial;
+}
+
+.hero {
+  position: relative;
+}
+
+.main-title-container {
+  position: absolute;
+  bottom: 4px;
+  left: 0;
+  max-width: 350px;
+  padding: 1rem;
+  background-color: white;
+}
+
+.project {
+  max-width: initial;
+  display: flex;
+  justify-content: space-around;
+}
+.project__media {
+  width: 50%;
+  margin-top: 100px;
+  order: 2;
+}
+.project__body {
+  width: 40%;
+  order: 1;
+}
+
+.projects-section {
+  width: 90%;
+  max-width: initial;
+}
+
+.about-section {
+  width: 90%;
+  max-width: initial;
+}
+
+.about {
+  display: flex;
+  justify-content: space-around;
+}
+.about__media {
+  width: 40%;
+}
+.about__body {
+  width: 50%;
+}
+
+.contact-section {
+  width: 90%;
+  max-width: initial;
+}
+
+.get-in-touch .paragraph,
+.contact-info {
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+.get-in-touch {
+  margin-bottom: 15px;
+}
+
+.contact-info {
+  text-align: center;
+}/*# sourceMappingURL=desktop-styles.css.map */

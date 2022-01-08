@@ -4,7 +4,12 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link href="./styles.css" rel="stylesheet" />
+		<link href="./styles/styles.css" rel="stylesheet" />
+		<link
+			href="./styles/desktop-styles.css"
+			rel="stylesheet"
+			media="screen and (min-width: 1100px)"
+		/>
 		<link rel="preconnect" href="https://fonts.gstatic.com" />
 		<link
 			href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@400;600;700&family=Public+Sans:wght@400;600;700&display=swap"
@@ -19,21 +24,21 @@
 	<body>
 		<div class="wrapper">
 			<header class="header">
-				<nav class="header__nav">
-					<ul class="nav">
+				<nav class="nav">
+					<ul>
 						<li><a class="nav__link" href="#projects">My projects</a></li>
 						<li><a class="nav__link" href="#about">About</a></li>
 						<li><a class="nav__link" href="#contact">Contact</a></li>
 					</ul>
 				</nav>
 			</header>
-			<main class="main" role="main">
+			<main class="main content-wrapper">
 				<section class="landing-section" id="landing">
 					<div class="hero">
 						<img src="./images/hero.jpg" alt="laptop with lines of code on its screen" />
-						<div class="main-title-wrapper">
+						<div class="main-title-container">
 							<h1 class="title title--main">
-								Hi, I'm Jesus Enrique and I love to build software
+								Hi, I'm Jesus Enrique and I love building software
 							</h1>
 							<a class="btn btn--dark" href="#about">About me</a>
 						</div>
@@ -114,12 +119,12 @@
 					</div>
 				</section>
 				<section class="about-section" id="about">
+					<h2 class="title title--sub">About Me</h2>
 					<div class="about">
 						<div class="about__media">
 							<img src="./images/je.jpeg" alt="A picture of Jesus Enrique" />
 						</div>
 						<div class="about__body">
-							<h2 class="title title--sub">About Me</h2>
 							<p class="paragraph">
 								I’m a junior developer looking for a new role in an exciting company. I've
 								been teaching myself software development for three years now, and the

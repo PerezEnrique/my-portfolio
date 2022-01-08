@@ -1,0 +1,20 @@
+@use "../../global";
+
+.contact-section {
+	width: 90%;
+	max-width: initial;
+}
+
+.get-in-touch .paragraph,
+.contact-info {
+	max-width: 750px;
+	margin: 0 auto;
+}
+
+.get-in-touch {
+	margin-bottom: 15px;
+}
+
+.contact-info {
+	text-align: center;
+}
