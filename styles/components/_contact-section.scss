@@ -1,0 +1,13 @@
+@use "../global";
+
+.contact-section {
+	width: 80%;
+	max-width: 560px; //width they have at 700px
+	margin: 0 auto;
+}
+
+.contact-info {
+	padding: 1px 1rem 0.25rem;
+	background-color: global.$primary-text-color;
+	color: white;
+}

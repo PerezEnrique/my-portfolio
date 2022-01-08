@@ -1,0 +1,11 @@
+@use "../../global";
+
+.icon {
+	display: inline-block;
+	margin: 15px 15px 15px 0;
+	font-size: 2rem;
+	color: inherit;
+	&:hover {
+		color: global.$on-hover-link-color;
+	}
+}

@@ -1,0 +1,38 @@
+@use "global";
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	margin: 0;
+	font-family: global.$font-family-sans;
+	color: global.$primary-text-color;
+}
+
+.content-wrapper {
+	max-width: 1500px;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}

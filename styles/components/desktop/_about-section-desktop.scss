@@ -1,0 +1,17 @@
+@use "../../global";
+
+.about-section {
+	width: 80%;
+	max-width: initial;
+}
+
+.about {
+	display: flex;
+	justify-content: space-around;
+	&__media {
+		width: 40%;
+	}
+	&__body {
+		width: 50%;
+	}
+}
