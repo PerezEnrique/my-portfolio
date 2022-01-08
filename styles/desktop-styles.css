@@ -1,5 +1,9 @@
+.header {
+  margin-bottom: 0;
+}
+
 .landing-section {
-  max-width: initial;
+  max-width: 1025px;
 }
 
 .hero {
@@ -31,12 +35,12 @@
 }
 
 .projects-section {
-  width: 90%;
+  width: 80%;
   max-width: initial;
 }
 
 .about-section {
-  width: 90%;
+  width: 80%;
   max-width: initial;
 }
 
@@ -52,7 +56,7 @@
 }
 
 .contact-section {
-  width: 90%;
+  width: 80%;
   max-width: initial;
 }
 
