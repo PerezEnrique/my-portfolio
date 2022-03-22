@@ -129,6 +129,14 @@ img {
   margin-bottom: 25px;
 }
 
+.inline-link {
+  color: #5fb4a2;
+}
+.inline-link:hover {
+  color: #5fb4a2;
+  cursor: pointer;
+}
+
 .icon {
   display: inline-block;
   margin: 15px 15px 15px 0;

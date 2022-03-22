@@ -1,0 +1,9 @@
+@use "../../global";
+
+.inline-link {
+    color: global.$on-hover-link-color;
+    &:hover {
+        color: global.$on-hover-link-color;
+        cursor: pointer;
+    }
+}
