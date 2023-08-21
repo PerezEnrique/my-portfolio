@@ -1,196 +1,264 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link href="./styles/styles.css" rel="stylesheet" />
-		<link
-			href="./styles/desktop-styles.css"
-			rel="stylesheet"
-			media="screen and (min-width: 1100px)"
-		/>
-		<link rel="preconnect" href="https://fonts.gstatic.com" />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@400;600;700&family=Public+Sans:wght@400;600;700&display=swap"
-			rel="stylesheet"
-		/>
-		<script
-			src="https://kit.fontawesome.com/7b7499731a.js"
-			crossorigin="anonymous"
-		></script>
-		<title>Jesus Enrique's Portfolio - Home</title>
-	</head>
-	<body>
-		<div class="wrapper">
-			<header class="header">
-				<nav class="nav">
-					<ul>
-						<li><a class="nav__link" href="#projects">My projects</a></li>
-						<li><a class="nav__link" href="#about">About</a></li>
-						<li><a class="nav__link" href="#contact">Contact</a></li>
-					</ul>
-				</nav>
-			</header>
-			<main class="main content-wrapper">
-				<section class="landing-section" id="landing">
-					<div class="hero">
-						<img src="./images/hero.jpg" alt="laptop with lines of code on its screen" />
-						<div class="main-title-container">
-							<h1 class="title title--main">
-								Hi, I'm Jesus Enrique and I love building software
-							</h1>
-							<a class="btn btn--dark" href="#projects">My projets</a>
-						</div>
-					</div>
-				</section>
-				<section class="projects-section" id="projects">
-					<h2 class="title title--sub">Some of My Projects</h2>
-					<div class="project">
-						<div class="project__media img-container">
-							<img
-								src="./images/countries-info.png"
-								alt="Screenshot of countries-info app"
-							/>
-						</div>
-						<div class="project__body">
-							<h3 class="title title--project">
-								Countries info app (Frontend mentor challenge)
-							</h3>
-							<p class="paragraph">
-								This project is my solution for the Frontend Mentor REST Countries API 
-								challenge. A priori, it seemed to be a project with a straightforward 
-								development process, but it started to get more complex as I built it. 
-								Creating the dropdown filter from scratch was indeed challenging, not 
-								only because of the design but also because of the accessibility 
-								aspects you have to cover. You learn a lot while building this project;
-								I recommend it if you want to exercise your frontend developer skills.
-								I created it using the Next.js static generation feature, Typescript,
-								and modern React tools such as Hooks and functional components. 
-								Thanks to Github Actions, the site is automatically rebuilt monthly 
-								to keep countries' data up to date. Finally, for styling, I used CSS 
-								with SASS as a preprocessor.
-								A previous version of this application that a built using only React can be
-								found <a class="inline-link" href="https://github.com/PerezEnrique/countries-info-app">here</a>. 
-							</p>
-							<a
-								class="btn btn--light"
-								href="https://github.com/PerezEnrique/countries-info-nextjs-app"
-								>View code</a
-							>
-							<a class="btn btn--dark" href="https://perezenrique.github.io/countries-info-nextjs-app/"
-								>Visit app</a
-							>
-						</div>
-					</div>
-					<div class="project">
-						<div class="project__media img-container">
-							<img
-								src="./images/bookmarks-client.png"
-								alt="Screenshot of bookmarks keeper client app"
-							/>
-						</div>
-						<div class="project__body">
-							<h3 class="title title--project">Bookmarks keeper</h3>
-							<p class="paragraph">
-								This project started as a personal side project. I got the idea from the 
-								Saved Messages telegram feature, whose interface is technically a chat. 
-								I used to use that chat to save some of my links, but I wanted a way to 
-								group them by category. That's why I decided to build my own bookmark 
-								keeper app (For the record, It was after I finished the app that I found 
-								out about Pocket). 
-								
-							</p>
-							<p class="paragraph">
-								I used the MERN stack dividing the project into API and client. For the 
-								backend, I used the 								
-								<a class="inline-link" href="https://www.npmjs.com/package/link-preview-js">
-									link-preview-js npm library
-								</a> 
-								by Oscar Franco to present the site information and Passport JS with JWT 
-								for authentication and authorization. As for the client UI design, it uses 
-								Material UI and its card component to make the bookmarks similar to the link 
-								previews you can find on chat apps. Recently I migrated these projects, and 
-								now Typescript is utilized on both.
-							</p>
-							<a
-								class="btn btn--light"
-								href="https://github.com/PerezEnrique/bookmarks-keeper-api"
-								>View code (backend)</a
-							>
-							<a
-								class="btn btn--light"
-								href="https://github.com/PerezEnrique/bookmarks-keeper-client"
-								>View code (frondend)</a
-							>
-							<a class="btn btn--dark" href="https://my-bookmarks-keeper.netlify.app"
-								>Visit app</a
-							>
-						</div>
-					</div>
-				</section>
-				<section class="about-section" id="about">
-					<h2 class="title title--sub">About Me</h2>
-					<div class="about">
-						<div class="about__media">
-							<img src="./images/je.jpeg" loading="lazy" alt="A picture of Jesus Enrique" />
-						</div>
-						<div class="about__body">
-							<p class="paragraph">
-								I am a JavaScript and .Net software developer interested in expanding 
-								my abilities with professional experience. I started learning software 
-								development four years ago, and the more I learned about coding, the 
-								more I fell in love whit it. I learned most of my developer skills from 
-								Mosh Hamedani's courses, which I find very comprehensive with attention 
-								to good practices. I also acquired a Platzi subscription, a platform of 
-								online courses, where I've been working on my developer skills for the 
-								past years.
-							</p>
-							<p class="paragraph">
-								For the first part of my journey, I focused on the "MERN" JavaScript 
-								stack learning C# syntax along the way. Still, recently I started working 
-								with .Net technologies, and I'm currently working on a couple of .Net 
-								projects to showcase on this portfolio. 
-							</p>
-							<p class="paragraph">
-								I'm based in Venezuela, and when I'm not coding, I like to play guitar 
-								and watch a lot of films.
-							</p>
-							<a class="btn btn--dark" href="#contact">My contact info</a>
-						</div>
-					</div>
-				</section>
-				<section class="contact-section" id="contact">
-					<div class="get-in-touch">
-						<h2 class="title title--sub">
-							Interested in doing a project together? Get in Touch
-						</h2>
-						<p class="paragraph">
-							I’d love to hear about what you’re working on and how I could help. I’m
-							currently looking for a junior role. I’m a hard-working person who's
-							always willing to learn new things. Please do feel free to check out my
-							online profiles below.
-						</p>
-					</div>
-					<div class="contact-info">
-						<h2 class="title title--sub title--light">Contact Me</h2>
-						<span>
-							Email:
-							<a href="mailto:28enriqueperez@gmail.com">28enriqueperez@gmail.com</a>
-						</span>
-						<br />
-						<a class="icon" href="https://github.com/perezEnrique"
-							><i class="fab fa-github"></i
-						></a>
-						<a class="icon" href="https://twitter.com/jesus93enrique"
-							><i class="fab fa-twitter"></i
-						></a>
-						<a class="icon" href="https://www.linkedin.com/in/enrique-perez28/"
-							><i class="fab fa-linkedin"></i
-						></a>
-					</div>
-				</section>
-			</main>
-		</div>
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./styles/styles.css" rel="stylesheet" />
+    <link
+      href="./styles/desktop-styles.css"
+      rel="stylesheet"
+      media="screen and (min-width: 1100px)"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@400;600;700&family=Public+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/7b7499731a.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Jesus Enrique's Portfolio - Home</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+          <ul>
+            <li><a class="nav__link" href="#projects">My projects</a></li>
+            <li><a class="nav__link" href="#about">About</a></li>
+            <li><a class="nav__link" href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main class="main content-wrapper">
+        <section class="landing-section" id="landing">
+          <div class="hero">
+            <img
+              src="./images/hero.jpg"
+              alt="laptop with lines of code on its screen"
+            />
+            <div class="main-title-container">
+              <h1 class="title title--main">
+                Hi, I'm Jesus Enrique and I love building software
+              </h1>
+              <a class="btn btn--dark" href="#projects">My projets</a>
+            </div>
+          </div>
+        </section>
+        <section class="projects-section" id="projects">
+          <h2 class="title title--sub">Some of My Projects</h2>
+          <div class="project">
+            <div class="project__media img-container">
+              <img
+                src="./images/bookmarks-client.png"
+                alt="Screenshot of bookmarks keeper client app"
+              />
+            </div>
+            <div class="project__body">
+              <h3 class="title title--project">Bookmarks keeper</h3>
+              <p class="paragraph">
+                This project started as a personal side project. I got the idea
+                from the Saved Messages telegram feature, whose interface is
+                technically a chat. I used to use that chat to save some of my
+                links, but I wanted a way to group them by category. That's why
+                I decided to build my own bookmark keeper app (For the record,
+                It was after I finished the app that I found out about Pocket).
+              </p>
+              <p class="paragraph">
+                I used the MERN stack dividing the project into API and client.
+                For the backend, I used the
+                <a
+                  class="inline-link"
+                  href="https://www.npmjs.com/package/link-preview-js"
+                >
+                  link-preview-js npm library
+                </a>
+                by Oscar Franco to present the site information and Passport JS
+                with JWT for authentication and authorization. As for the client
+                UI design, it uses Material UI and its card component to make
+                the bookmarks similar to the link previews you can find on chat
+                apps. Recently I migrated these projects, and now Typescript is
+                utilized on both.
+              </p>
+              <a
+                class="btn btn--light"
+                href="https://github.com/PerezEnrique/bookmarks-keeper-api"
+                >View code (backend)</a
+              >
+              <a
+                class="btn btn--light"
+                href="https://github.com/PerezEnrique/bookmarks-keeper-client"
+                >View code (frondend)</a
+              >
+              <a
+                class="btn btn--dark"
+                href="https://my-bookmarks-keeper.netlify.app"
+                >Visit app</a
+              >
+            </div>
+          </div>
+          <div class="project">
+            <div class="project__media img-container">
+              <img
+                src="./images/wpf-invoice-system.png"
+                alt="Screenshot of WPF Invoice System windows app"
+              />
+            </div>
+            <div class="project__body">
+              <h3 class="title title--project">
+                WPF Invoice System Windows App
+              </h3>
+              <p class="paragraph">
+                I came up with this idea while working in my family business.
+                They had stopped using the previous invoice system of the
+                company because it had many bugs and the license was expensive.
+                In addition, I have always been interested in building a Windows
+                desktop application, and I knew C#, so I decided to make a new
+                invoice system for the company. The project was a challenge for
+                my Object Oriented Programming skills, and I even had the
+                opportunity to put into practice some design patterns. The
+                project in this portfolio is a lightweight version of that
+                project because the original project has more company-related
+                features that I decided not to include here.
+              </p>
+              <p class="paragraph">
+                I choose WPF instead of newer frameworks (MAUI, for instance)
+                primarily because of the old hardware that we have in the
+                company. I also used the Prism library for an easier way of
+                handling navigation.
+              </p>
+              <p class="paragraph">
+                Now about persistence: I went with SQL Server in the original
+                project, but I used SQLite for this project so that the people
+                who want to try this project can have their data in the desktop
+                directory of their computers. In both cases, I managed the DB
+                through Entity Framework code-first approach.
+              </p>
+              <a
+                class="btn btn--light"
+                href="https://github.com/PerezEnrique/WPFInvoiceSystem"
+                >View Code (and find the executable)
+              </a>
+            </div>
+          </div>
+          <div class="project">
+            <div class="project__media img-container">
+              <img
+                src="./images/countries-info.png"
+                alt="Screenshot of countries-info app"
+              />
+            </div>
+            <div class="project__body">
+              <h3 class="title title--project">
+                Countries info app (Frontend mentor challenge)
+              </h3>
+              <p class="paragraph">
+                This project is my solution for the Frontend Mentor REST
+                Countries API challenge. A priori, it seemed to be a project
+                with a straightforward development process, but it started to
+                get more complex as I built it. Creating the dropdown filter
+                from scratch was indeed challenging, not only because of the
+                design but also because of the accessibility aspects you have to
+                cover. You learn a lot while building this project; I recommend
+                it if you want to exercise your frontend developer skills. I
+                created it using the Next.js static generation feature,
+                Typescript, and modern React tools such as Hooks and functional
+                components. Thanks to Github Actions, the site is automatically
+                rebuilt monthly to keep countries' data up to date. Finally, for
+                styling, I used CSS with SASS as a preprocessor. A previous
+                version of this application that a built using only React can be
+                found
+                <a
+                  class="inline-link"
+                  href="https://github.com/PerezEnrique/countries-info-app"
+                  >here</a
+                >.
+              </p>
+              <a
+                class="btn btn--light"
+                href="https://github.com/PerezEnrique/countries-info-nextjs-app"
+                >View code</a
+              >
+              <a
+                class="btn btn--dark"
+                href="https://perezenrique.github.io/countries-info-nextjs-app/"
+                >Visit app</a
+              >
+            </div>
+          </div>
+        </section>
+        <section class="about-section" id="about">
+          <h2 class="title title--sub">About Me</h2>
+          <div class="about">
+            <div class="about__media">
+              <img
+                src="./images/je.jpeg"
+                loading="lazy"
+                alt="A picture of Jesus Enrique"
+              />
+            </div>
+            <div class="about__body">
+              <p class="paragraph">
+                I am a JavaScript and .Net software developer interested in
+                expanding my abilities with professional experience. I started
+                learning software development four years ago, and the more I
+                learned about coding, the more I fell in love whit it. I learned
+                most of my developer skills from Mosh Hamedani's courses, which
+                I find very comprehensive with attention to good practices. I
+                also acquired a Platzi subscription, a platform of online
+                courses, where I've been working on my developer skills for the
+                past years.
+              </p>
+              <p class="paragraph">
+                For the first part of my journey, I focused on the "MERN"
+                JavaScript stack learning C# syntax along the way. Still,
+                recently I started working with .Net technologies, and I'm
+                currently working on a couple of .Net projects to showcase on
+                this portfolio.
+              </p>
+              <p class="paragraph">
+                I'm based in Venezuela, and when I'm not coding, I like to play
+                guitar and watch a lot of films.
+              </p>
+              <a class="btn btn--dark" href="#contact">My contact info</a>
+            </div>
+          </div>
+        </section>
+        <section class="contact-section" id="contact">
+          <div class="get-in-touch">
+            <h2 class="title title--sub">
+              Interested in doing a project together? Get in Touch
+            </h2>
+            <p class="paragraph">
+              I’d love to hear about what you’re working on and how I could
+              help. I’m currently looking for a junior role. I’m a hard-working
+              person who's always willing to learn new things. Please do feel
+              free to check out my online profiles below.
+            </p>
+          </div>
+          <div class="contact-info">
+            <h2 class="title title--sub title--light">Contact Me</h2>
+            <span>
+              Email:
+              <a href="mailto:28enriqueperez@gmail.com"
+                >28enriqueperez@gmail.com</a
+              >
+            </span>
+            <br />
+            <a class="icon" href="https://github.com/perezEnrique"
+              ><i class="fab fa-github"></i
+            ></a>
+            <a class="icon" href="https://twitter.com/jesus93enrique"
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <a class="icon" href="https://www.linkedin.com/in/enrique-perez28/"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
 </html>
