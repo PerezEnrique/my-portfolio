@@ -3,4 +3,7 @@
 .project {
 	max-width: 575px;
 	margin: 0 auto 50px;
+	&__media {
+		margin-bottom: 50px;
+	}
 }
