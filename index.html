@@ -52,56 +52,6 @@
           <div class="project">
             <div class="project__media">
               <img
-                src="./images/bookmarks-client.png"
-                alt="Screenshot of bookmarks keeper client app"
-              />
-            </div>
-            <div class="project__body">
-              <h3 class="title title--project">Bookmarks keeper</h3>
-              <p class="paragraph">
-                This project started as a personal side project. I got the idea
-                from the Saved Messages telegram feature, whose interface is
-                technically a chat. I used to use that chat to save some of my
-                links, but I wanted a way to group them by category. That's why
-                I decided to build my own bookmark keeper app (For the record,
-                It was after I finished the app that I found out about Pocket).
-              </p>
-              <p class="paragraph">
-                I used the MERN stack dividing the project into API and client.
-                For the backend, I used the
-                <a
-                  class="inline-link"
-                  href="https://www.npmjs.com/package/link-preview-js"
-                >
-                  link-preview-js npm library
-                </a>
-                by Oscar Franco to present the site information and Passport JS
-                with JWT for authentication and authorization. As for the client
-                UI design, it uses Material UI and its card component to make
-                the bookmarks similar to the link previews you can find on chat
-                apps. Recently I migrated these projects, and now Typescript is
-                utilized on both.
-              </p>
-              <a
-                class="btn btn--light"
-                href="https://github.com/PerezEnrique/bookmarks-keeper-api"
-                >View code (backend)</a
-              >
-              <a
-                class="btn btn--light"
-                href="https://github.com/PerezEnrique/bookmarks-keeper-client"
-                >View code (frondend)</a
-              >
-              <a
-                class="btn btn--dark"
-                href="https://my-bookmarks-keeper.netlify.app"
-                >Visit app</a
-              >
-            </div>
-          </div>
-          <div class="project">
-            <div class="project__media">
-              <img
                 src="./images/wpf-invoice-system.png"
                 alt="Screenshot of WPF Invoice System windows app"
               />
@@ -114,27 +64,28 @@
                 I came up with this idea while working in my family business.
                 They had stopped using the previous invoice system of the
                 company because it had many bugs and the license was expensive.
-                In addition, I have always been interested in building a Windows
+                In addition, I had always been interested in building a Windows
                 desktop application, and I knew C#, so I decided to make a new
-                invoice system for the company. The project has been a challenge
-                for my Object Oriented Programming skills, and I even have had
-                the opportunity to put into practice some design patterns. The
+                invoice system for the company. The development was a challenge
+                for my Object Oriented Programming skills, and I even had the
+                opportunity to put into practice some design patterns. The
                 project in this portfolio is a lightweight version of that
-                project because the original project has more company-related
-                features that I decided not to include here.
+                project because the latter has more company-related features
+                that I decided not to include here.
               </p>
               <p class="paragraph">
-                I choose WPF instead of newer frameworks (MAUI, for instance)
-                primarily because of the old hardware that we have in the
-                company. I also used the Prism library for an easier way of
-                handling navigation.
+                I choose WPF for the windows client app development instead of
+                newer frameworks such as MAUI, primarily because of the old
+                hardware that we have in the company. I also used the Prism
+                library for an easier way of handling navigation.
               </p>
               <p class="paragraph">
                 Now about persistence: I went with SQL Server in the original
-                project, but I used SQLite for this project so that the people
-                who want to try this project can have their data in the desktop
-                directory of their computers. In both cases, I managed the DB
-                through Entity Framework code-first approach.
+                project, but for this one I used SQLite so that it is easier to
+                offer to the users testing this porfolio app, an option to clear
+                the date they inserted. It's also important to note that, in
+                both cases, I managed the DB through Entity Framework code-first
+                approach.
               </p>
               <a
                 class="btn btn--light"
@@ -158,9 +109,8 @@
                 I participated in a 5-week work simulation as a Backend
                 Developer within a diverse team of talented developers and UI/UX
                 designers. There, we built a MVP called Acompañar+ with React
-                and Express.js. The project aims to create a bridge between
-                the elderly and the new generations through community
-                activities.
+                and Express.js. The project aims to create a bridge between the
+                elderly and the new generations through community activities.
               </p>
               <p class="paragraph">
                 This was such a rewarding experience because I had the
@@ -178,51 +128,6 @@
               </a>
             </div>
           </div>
-          <div class="project">
-            <div class="project__media">
-              <img
-                src="./images/countries-info.png"
-                alt="Screenshot of countries-info app"
-              />
-            </div>
-            <div class="project__body">
-              <h3 class="title title--project">
-                Countries info app (Frontend mentor challenge)
-              </h3>
-              <p class="paragraph">
-                This project is my solution for the Frontend Mentor REST
-                Countries API challenge. A priori, it seemed to be a project
-                with a straightforward development process, but it started to
-                get more complex as I built it. Creating the dropdown filter
-                from scratch was indeed challenging, not only because of the
-                design but also because of the accessibility aspects you have to
-                cover. You learn a lot while building this project; I recommend
-                it if you want to exercise your frontend developer skills. I
-                created it using the Next.js static generation feature,
-                Typescript, and modern React tools such as Hooks and functional
-                components. Thanks to Github Actions, the site is automatically
-                rebuilt monthly to keep countries' data up to date. Finally, for
-                styling, I used CSS with SASS as a preprocessor. A previous
-                version of this application that a built using only React can be
-                found
-                <a
-                  class="inline-link"
-                  href="https://github.com/PerezEnrique/countries-info-app"
-                  >here</a
-                >.
-              </p>
-              <a
-                class="btn btn--light"
-                href="https://github.com/PerezEnrique/countries-info-nextjs-app"
-                >View code</a
-              >
-              <a
-                class="btn btn--dark"
-                href="https://perezenrique.github.io/countries-info-nextjs-app/"
-                >Visit app</a
-              >
-            </div>
-          </div>
         </section>
         <section class="about-section" id="about">
           <h2 class="title title--sub">About Me</h2>
@@ -236,7 +141,7 @@
             </div>
             <div class="about__body">
               <p class="paragraph">
-                I am a .Net and JavaScript full-stack web developer who also has
+                I am a .Net and JavaScript backend developer who also has
                 Windows applications development knowledge. I started learning
                 software development five years ago, and I discovered I really
                 like using tech to solve problems. I decided to make a career
@@ -245,15 +150,16 @@
               </p>
               <p class="paragraph">
                 I focused on the "MERN" JavaScript stack for the first part of
-                my journey. Later, I learned C# and started working with .Net
+                my journey. Later, I learned C# and I realized I enjoyed more to
+                program on the backend. From here, I worked with .Net
                 technologies, building Windows desktop applications with WPF and
                 APIs with ASP.Net Core. I have used much of that knowledge while
                 working in my family's business. I never stop learning; that's
                 why, at the moment, I'm studying AWS and Azure.
               </p>
               <p class="paragraph">
-                I'm based in Venezuela, and when I'm not coding, I like to play
-                guitar and watch a lot of films.
+                I'm based in Venezuela, and when I'm not coding, I like to watch
+                a lot of films and play guitar.
               </p>
               <a class="btn btn--dark" href="#contact">My contact info</a>
             </div>
@@ -267,8 +173,9 @@
             <p class="paragraph">
               I’d love to hear about what you’re working on and how I could
               help. I’m currently looking for a junior role. I’m a hard-working
-              person who's always willing to learn new things. Please do feel
-              free to check out my online profiles below.
+              person who's currently open to opportunities and roles, where I
+              can actively contribute, doing what I like the most that is using
+              tech to solve problems.
             </p>
           </div>
           <div class="contact-info">
