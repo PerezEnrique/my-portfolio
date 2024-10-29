@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./styles/styles.css" rel="stylesheet" />
+    <link
+      href="./styles/desktop-styles.css"
+      rel="stylesheet"
+      media="screen and (min-width: 1100px)"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@400;600;700&family=Public+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/7b7499731a.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Portafolio de Jesus Enrique</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+          <ul>
+            <li><a class="nav__link" href="#projects">Mis Proyectos</a></li>
+            <li><a class="nav__link" href="#about">Sobre mí</a></li>
+            <li><a class="nav__link" href="#contact">Contacto</a></li>
+            <li><a class="nav__link" href="/index.html">Versión en inglés 🇬🇧</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main class="main content-wrapper">
+        <section class="landing-section" id="landing">
+          <div class="hero">
+            <img
+              src="./images/hero.jpg"
+              alt="Laptop con lineas de código en la pantalla"
+            />
+            <div class="main-title-container">
+              <h1 class="title title--main">
+                Hola, Soy Jesus Enrique y me encanta crear software
+              </h1>
+              <a class="btn btn--dark" href="#projects">Mis proyectos</a>
+            </div>
+          </div>
+        </section>
+        <section class="projects-section" id="projects">
+          <h2 class="title title--sub">Algunos de mis proyectos</h2>
+          <div class="project">
+            <div class="project__media">
+              <img
+                src="./images/wpf-invoice-system.png"
+                alt="Captura de pantalla de la app WPF Invoice System"
+              />
+            </div>
+            <div class="project__body">
+              <h3 class="title title--project">
+                WPF Invoice System Windows App
+              </h3>
+              <p class="paragraph">
+                Se me ocurrió esta idea mientras trabajaba en la empresa de mi
+                familia. Habían dejado de usar el sistema de facturación
+                anterior porque tenía muchos errores y la licencia era costosa.
+                Siempre me había interesado construir una aplicación de
+                escritorio para Windows, y conocía C#, así que decidí hacer un
+                nuevo sistema de facturación para la empresa. El desarrollo fue
+                un desafío para mis habilidades de Programación Orientada a
+                Objetos, donde incluso tuve la oportunidad de poner en práctica
+                algunos patrones de diseño. El proyecto en este portafolio es
+                una versión más ligera ya que el original tiene más
+                características relacionadas con la compañía que decidí no
+                incluir aquí.
+              </p>
+              <p class="paragraph">
+                Elegí WPF para el desarrollo de la aplicación cliente de Windows
+                en lugar de frameworks más nuevos como MAUI, principalmente
+                debido al antiguo hardware que tenemos en la compañía. También
+                utilicé la librería Prism para facilitar el manejo de la
+                navegación.
+              </p>
+              <p class="paragraph">
+                Ahora sobre la persistencia: en el proyecto original utilicé SQL
+                Server, pero para este utilicé SQLite de manera que fuera más
+                fácil ofrecer a los usuarios que prueban esta aplicación de
+                portafolio una opción para borrar los registros que insertaron.
+                También es importante destacar que, en ambos casos, gestioné la
+                base de datos a través del enfoque code-first de Entity
+                Framework.
+              </p>
+              <a
+                class="btn btn--light"
+                href="https://github.com/PerezEnrique/WPFInvoiceSystem"
+                >Ver código (y acceder al ejecutable)
+              </a>
+            </div>
+          </div>
+          <div class="project">
+            <div class="project__media">
+              <img
+                src="./images/acompanar.png"
+                alt="Captura de pantalla de la landing page de Acompañar+"
+              />
+            </div>
+            <div class="project__body">
+              <h3 class="title title--project">
+                Acompañar+ (MVP de simulación No Country)
+              </h3>
+              <p class="paragraph">
+                Participé en una simulación de trabajo de 5 semanas como
+                Desarrollador Backend dentro de un equipo diverso de talentosos
+                desarrolladores y diseñadores UI/UX. Allí, construimos un MVP
+                llamado Acompañar+ con React y Express.js. El proyecto tiene
+                como objetivo crear un puente entre las personas mayores y las
+                nuevas generaciones a través de actividades comunitarias.
+              </p>
+              <p class="paragraph">
+                Esta fue una experiencia muy gratificante porque tuve la
+                oportunidad de pulir varias de mis habilidades blandas como el
+                trabajo en equipo, la resolución de problemas y también mi
+                capacidad para comunicar conceptos técnicos complejos entre
+                equipos multidisciplinarios. Además, dado que teníamos un plazo
+                de tiempo comprimido, juntos ganamos valiosa experiencia en la
+                priorización de tareas y la adaptación a los requisitos
+                cambiantes del proyecto.
+              </p>
+              <a
+                class="btn btn--light"
+                href="https://github.com/No-Country/c16-07-m-node-react"
+                >Ver código
+              </a>
+            </div>
+          </div>
+        </section>
+        <section class="about-section" id="about">
+          <h2 class="title title--sub">Sobre mí</h2>
+          <div class="about">
+            <div class="about__media">
+              <img
+                src="./images/je.jpeg"
+                loading="lazy"
+                alt="Una fotografía de Jesus Enrique"
+              />
+            </div>
+            <div class="about__body">
+              <p class="paragraph">
+                Soy un desarrollador backend .Net y JavaScript que también tiene
+                conocimiento en el desarrollo de aplicaciones de Windows.
+                Comencé a aprender desarrollo de software hace cinco años, y
+                descubrí que realmente me gusta usar la tecnología para resolver
+                problemas. Decidí hacer una carrera de esto y prepararme más
+                seriamente, así que me inscribí en algunas plataformas de
+                aprendizaje en linea.
+              </p>
+              <p class="paragraph">
+                Al principio de mi viaje, me centré en el stack "MERN" de
+                JavaScript. Más tarde, aprendí C# y me di cuenta de que
+                disfrutaba más programando en el backend. A partir de ahí,
+                trabajé con tecnologías .Net, creando aplicaciones de escritorio
+                de Windows con WPF y APIs con ASP.Net Core. He utilizado gran
+                parte de esos conocimientos mientras trabajaba en la empresa de
+                mi familia. Nunca dejo de aprender, por eso, en este momento,
+                estoy estudiando AWS y Azure.
+              </p>
+              <p class="paragraph">
+                Resido en Venezuela, y cuando no estoy programando, me encanta
+                ver peliculas y tocar la guitarra.
+              </p>
+              <a class="btn btn--dark" href="#contact"
+                >Mi información de contacto</a
+              >
+            </div>
+          </div>
+        </section>
+        <section class="contact-section" id="contact">
+          <div class="get-in-touch">
+            <h2 class="title title--sub">
+              ¿Te interesa trabajar juntos? Pongamonos en contacto
+            </h2>
+            <p class="paragraph">
+              Tengo curiosidad en escuchar sobre tu proyecto y cómo podría
+              ayudarte. Actualmente estoy buscando una posición junior. Soy una
+              persona trabajadora que está actualmente abierta a oportunidades y
+              roles, donde pueda contribuir activamente, haciendo lo que más me
+              gusta, que es usar la tecnología para resolver problemas.
+            </p>
+          </div>
+          <div class="contact-info">
+            <h2 class="title title--sub title--light">Contactame</h2>
+            <span>
+              Email:
+              <a href="mailto:28enriqueperez@gmail.com"
+                >28enriqueperez@gmail.com</a
+              >
+            </span>
+            <br />
+            <a class="icon" href="https://github.com/perezEnrique"
+              ><i class="fab fa-github"></i
+            ></a>
+            <a class="icon" href="https://twitter.com/jesus93enrique"
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <a class="icon" href="https://www.linkedin.com/in/enrique-perez28/"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
