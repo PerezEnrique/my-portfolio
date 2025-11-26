@@ -56,6 +56,49 @@
           <h2 class="title title--sub">Some of My Projects</h2>
           <div class="project">
             <div class="project__media">
+              <video controls src="./videos/gamestore-demo.mp4"></video>
+            </div>
+            <div class="project__body">
+              <h3 class="title title--project">
+                Cloud native game e-commerce backend
+              </h3>
+              <p class="paragraph">
+                Cloud development has always been appealing to me, and I finally
+                had the opportunity to dive into it through a fully hands-on
+                project. This is a cloud-native game ecommerce backend, built
+                with ASP.NET Core and powered by several Azure services.
+              </p>
+              <p class="paragraph">
+                The homepage lists all available video games, with image assets
+                stored in Azure Storage. User authentication is handled through
+                Microsoft Entra ID, which also provides role-based authorization
+                (RBAC) to secure the admin dashboard and restrict access to
+                admin-only operations. Game data is persisted in Azure Database
+                for PostgreSQL.
+              </p>
+              <p class="paragraph">
+                The ASP.NET Core API is deployed on Azure App Service, which
+                uses a Managed Identity to securely communicate with Azure
+                Storage and the PostgreSQL database, no secrets needed.
+              </p>
+              <p class="paragraph">
+                To demonstrate the backend functionality, I built a simple UI
+                using Angular. The client app is hosted on Azure Static Web Apps
+                and fully integrated into the Entra authentication workflow.
+              </p>
+              <p class="paragraph">
+                Upcoming enhancements: shopping cart functionality and Stripe
+                payment integration.
+              </p>
+              <a
+                class="btn btn--light"
+                href="https://github.com/PerezEnrique/game-store-backend"
+                >View code
+              </a>
+            </div>
+          </div>
+          <div class="project">
+            <div class="project__media">
               <img
                 src="./images/wpf-invoice-system.png"
                 alt="Screenshot of WPF Invoice System windows app"
