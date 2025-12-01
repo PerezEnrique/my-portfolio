@@ -56,6 +56,49 @@
           <h2 class="title title--sub">Some of My Projects</h2>
           <div class="project">
             <div class="project__media">
+              <video controls src="./videos/gamestore-demo.mp4"></video>
+            </div>
+            <div class="project__body">
+              <h3 class="title title--project">
+                Cloud native game e-commerce backend
+              </h3>
+              <p class="paragraph">
+                Cloud development has always been appealing to me, and I finally
+                had the opportunity to dive into it through a fully hands-on
+                project. This is a cloud-native game ecommerce backend, built
+                with ASP.NET Core and powered by several Azure services.
+              </p>
+              <p class="paragraph">
+                The homepage lists all available video games, with image assets
+                stored in Azure Storage. User authentication is handled through
+                Microsoft Entra ID, which also provides role-based authorization
+                (RBAC) to secure the admin dashboard and restrict access to
+                admin-only operations. Game data is persisted in Azure Database
+                for PostgreSQL.
+              </p>
+              <p class="paragraph">
+                The ASP.NET Core API is deployed on Azure App Service, which
+                uses a Managed Identity to securely communicate with Azure
+                Storage and the PostgreSQL database, no secrets needed.
+              </p>
+              <p class="paragraph">
+                To demonstrate the backend functionality, I built a simple UI
+                using Angular. The client app is hosted on Azure Static Web Apps
+                and fully integrated into the Entra authentication workflow.
+              </p>
+              <p class="paragraph">
+                Upcoming enhancements: shopping cart functionality and Stripe
+                payment integration.
+              </p>
+              <a
+                class="btn btn--light"
+                href="https://github.com/PerezEnrique/game-store-backend"
+                >View code
+              </a>
+            </div>
+          </div>
+          <div class="project">
+            <div class="project__media">
               <img
                 src="./images/wpf-invoice-system.png"
                 alt="Screenshot of WPF Invoice System windows app"
@@ -133,51 +176,6 @@
               </a>
             </div>
           </div>
-          <div class="project">
-            <div class="project__media">
-              <img
-                src="./images/bookmarks-client.png"
-                alt="Screenshot of bookmarks keeper client app"
-              />
-            </div>
-            <div class="project__body">
-              <h3 class="title title--project">Bookmarks keeper</h3>
-              <p class="paragraph">
-                This was a personal side project. I got the idea from the Saved
-                Messages telegram feature, whose interface is technically a
-                chat. I used to use that chat to save some of my links, but I
-                wanted a way to group them by category. That's why I decided to
-                build my own bookmark keeper app (For the record, It was after I
-                finished the app that I found out about Pocket).
-              </p>
-              <p class="paragraph">
-                I used the MERN stack dividing the project into API and client.
-                For the backend, I used the
-                <a
-                  class="inline-link"
-                  href="https://www.npmjs.com/package/link-preview-js"
-                >
-                  link-preview-js npm library
-                </a>
-                by Oscar Franco to present the site information and Passport JS
-                with JWT for authentication and authorization. As for the client
-                UI design, it uses Material UI and its card component to make
-                the bookmarks similar to the link previews you can find on chat
-                apps. Recently I migrated these projects, and now Typescript is
-                utilized on both.
-              </p>
-              <a
-                class="btn btn--light"
-                href="https://github.com/PerezEnrique/bookmarks-keeper-api"
-                >View code (backend)</a
-              >
-              <a
-                class="btn btn--light"
-                href="https://github.com/PerezEnrique/bookmarks-keeper-client"
-                >View code (frondend)</a
-              >
-            </div>
-          </div>
         </section>
         <section class="about-section" id="about">
           <h2 class="title title--sub">About Me</h2>
@@ -191,13 +189,15 @@
             </div>
             <div class="about__body">
               <p class="paragraph">
-                .Net and JavaScript full-stack developer with over three years
-                of experience using technology to solve real-world problems.
-                Skilled in ASP.Net Core, Express.js, and Nest.js for API
-                development, as well as React and WPF for building intuitive web
-                and desktop applications, I bring a strong foundation in
-                software development complemented by hands-on experience
-                managing technical challenges in a business setting.
+                .Net and JavaScript backend developer passionate about building
+                structured and automated systems that improve administrative and
+                financial workflows. I work primarily with ASP.Net Core,
+                Express.js, and Nest.js for API development, and but I can also
+                use WPF to create intuitive desktop applications. Additionally,
+                I manage SQL and NoSQL databases such as PostgreSQL and MongoDB,
+                and I have experience with Git, GitHub, and Docker for version
+                control and CI/CD processes. I enjoy designing clean, scalable,
+                and maintainable software architectures.
               </p>
               <p class="paragraph">
                 I also actively participate in collaborative work simulations
@@ -206,7 +206,7 @@
                 ability to work effectively in a team environment.
               </p>
               <p class="paragraph">
-                Additionally, I have a blog (so far in spanish) where I share
+                Besides, I have a blog (so far in spanish only) where I share
                 interesting things I learn about technology, with the aim of
                 documenting my process and helping others along the way. If
                 you're interested, you can visit it by clicking on
